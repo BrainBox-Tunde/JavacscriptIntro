@@ -8,6 +8,25 @@
 </head>
 <body>
     <h1>Hello, world</h1>
-    <script src="script.js"></script>
+  
+        <input type="text" id="f_name" placeholder="Enter First Name">
+        <input type="text" id="l_name" placeholder="Enter Last Name">
+        <input type="text" id="age" placeholder="Enter Age">
+        <input type="text" id="height" placeholder="Enter Height">
+        <input type="submit" onclick="myFunc()"  value="Submit">
+    
+    <p id="demo"></p>
+    <script src="script.js">
+        function myFunc(){
+            // let first_name = document.getElementById(f_name).value;
+            // let last_name = document.getElementById(l_name).value;
+            // let age = document.getElementById(age).value;
+            // let height = document.getElementById(height).value;
+
+            const val = document.querySelector('input').value;
+             
+            document.getElementById("demo").innerHTML = val;
+        }
+    </script>
 </body>
 </html>
